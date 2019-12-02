@@ -1,13 +1,12 @@
 from src import utils
-import sys
-import os
+
 
 def solve(in_array):
-    '''
+    """
     Given the input set, extend the size twice in both directions, with each new quadrant being a rotation of the input
     :param in_array: input array
     :return: expected output array
-    '''
+    """
     array_edgelength = len(in_array[0])   # input array edge length
     opp_end = array_edgelength*2-1    # used for getting opposite end of array
     prediction = [[-1]*array_edgelength*2 for i in range(array_edgelength*2)]  # init 2d array

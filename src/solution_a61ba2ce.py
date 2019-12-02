@@ -2,12 +2,12 @@ from src import utils
 
 
 def solve(in_array):
-    '''
+    """
     This set matches up the three-point triangles present in the image into a 4-4 grid,
     with the triangles in the corners, so that the center is empty
     :param in_array: input array
     :return: expected output array
-    '''
+    """
     prediction = list()
     corners = [-1,-1,-1,-1]     # top-left, top-right, bottom-left, bottom-right values
 
