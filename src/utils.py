@@ -35,11 +35,18 @@ def run_tests(training_set, solving_function):
 
         prediction = solving_function(training_input)
 
+        # not entirely clear what output is expected here. Assignment doesn't specify to print the Input grid,
+        # but it'd make more sense that it does.
         if prediction == training_output:
-            print("INPUT:")
+            print("\nINPUT:")
             print(np.matrix(training_input))
-            print("OUTPUT/SOLUTION:")
+            print("OUTPUT:")
             print(np.matrix(prediction))
-            print("Test passed.\n")
         else:
+            print("\nINPUT:")
+            print(np.matrix(training_input))
+            print("TRAINING OUTPUT:")
+            print(np.matrix(training_output))
+            print("SOLUTION'S OUTPUT:")
+            print(np.matrix(prediction))
             print("ERROR: TEST FAILED")
