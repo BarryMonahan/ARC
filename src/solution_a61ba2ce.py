@@ -26,6 +26,7 @@ def solve(in_array):
                         corner += 1  # is on the right
                     corners[corner] = in_array[y][x]
 
+    # Now that we have the four corner values, create the solution array
     prediction = [[corners[0], corners[0], corners[1], corners[1]],
                   [corners[0], 0, 0, corners[1]],
                   [corners[2], 0, 0, corners[3]],
