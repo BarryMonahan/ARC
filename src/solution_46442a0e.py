@@ -1,5 +1,6 @@
 from src import utils
 
+
 def solve(in_array):
     array_edgelength = len(in_array[0])   # input array edge length
     opp_end = array_edgelength*2-1    # used for getting opposite end of array
