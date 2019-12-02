@@ -1,5 +1,7 @@
 from src import utils
 
+# Unfortunately, this solution was actually taken and Blackboard wasn't displaying properly,
+# so it can't be used for the assignment
 
 def solve(in_array):
     """
