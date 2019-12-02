@@ -5,7 +5,7 @@ from src import utils
 
 def solve(in_array):
     """
-    Similar to Training 1, but where new quadrants are flips of the original array rather than rotations
+    Similar to 46442a0e, but where new quadrants are flips of the original array rather than rotations
     :param in_array: input array
     :return: expected output array
     """
